@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Guanabara';
+    src: url(referencias/fontes/idroid.otf);
+}
+
+body {
+    background-color: #84E1AD;
+}
+
+    /* Organização do Cabeçalho */
+header {
+    background-image: linear-gradient(to bottom, #2EA564, #063C1D);
+    font-family: 'Arial, Helvetica', sans-serif;
+    padding: 10px;
+    margin: -10px -10px 1px -10px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    box-shadow: 3px 3px 15px #170c027a;
+}
+
+h1.cabecalho {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.258);
+}
+
+p.cabecalho {
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+    max-width: 500px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.258);
+}
+
+a.cabecalho {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+    padding: 11px;
+    position: inherit;
+    
+}
+
+a.cabecalho:hover {
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background-color: #84E1AD;
+    color: #1A5C38;
+}
+
+/* Organização do Corpo */
+main {
+    margin: auto;
+    background-color: white;
+    height: 2350px;
+    min-width: 320px;
+    max-width: 800px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 3px 3px 15px #170c027a;
+}
+
+h1.corpo {
+    font-family: 'Guanabara';
+    color: #2B6846;
+    margin: 0px 1px 20px 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+h2.corpo {
+    font-family: 'Guanabara';
+    color: #2B6846;
+    background-image: linear-gradient(to right, #C5EBD6, #f7f7f717);
+    margin: 1px 1px 1px 10px;
+    padding-left: 5px;
+
+}
+
+p.corpo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 16px; 
+    text-align: justify ;
+    text-indent: 30px;
+}
+
+a.corpo {
+    text-decoration: none;
+    color: #2B6846;
+    background-color: #84E1AD;
+    font-weight: bold;
+    padding: 1px 6px;
+}
+
+a.corpo:hover {
+    text-decoration: underline;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+#video {
+    width: 800px;
+    height: 350px;
+    background-color: #1A5C38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Organização do menu Extra */
+.titulolista {
+    margin: auto;
+    width: 700px;
+    height: 35px;
+    color: white;
+    text-indent: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #34B96F;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.lista {
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    background-color: #C5EBD6;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 2px 2px 15px #170c027a;
+}
+
+.marcadores {
+    list-style: '✔';
+}
+
+/* Organização do Rodapé */
+footer {
+    text-align: center;
+    color: white;
+    background-color: #1A5C38;
+    margin: -10px;
+    height: 30px;
+}
+
+.rodape {
+    margin: 20px 0px 10px 0px;
+}
