@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Kibon';
+    src: url('Fontes/font-bold.otf') format('opentype');
+    font-weight: normal;
+}
+
+header > div {
+    background-color: #DE2727;
+    color: #DE2727;
+    padding: 15px;
+    margin: -10px;
+}
+header > img {
+    display: inline;
+    height: 100px;
+    width: 100px;
+    margin: -25px 0px -19px 15px;
+}
+
+nav {
+    display: inline-flex;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 1.3em;
+    padding-bottom: 30px;
+    margin: 15px 0px 15px 0px;
+    text-indent: 50px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.198);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+
+.produto-central {
+    display: inline;
+    width: 400px;
+}
+
+.imagem-central {
+    height: 400px;
+    width: 400px;
+}
+
+.descricao-produto {
+    display: inline-block;
+    height: 250px;
+    width: 600px;
+    position: relative;
+}
+
+.descricao-produto > h1 {
+    font-family: 'Kibon', sans-serif;
+    
+}
+
+.descricao-produto > p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+article > h2 {
+    font-family: 'Kibon', sans-serif;
+}
+
+article > h3 {
+    display: inline;
+    margin: 30px;
+    font-family: 'Kibon' ,sans-serif;
+    font-weight: bold;
+}
+
+.tabela-nutricional {
+    font-family: 'Kibon' , sans-serif;
+    background-color: #FFE363;
+    text-align: center;
+    height: 200px;
+    padding-top: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.tabela-nutricional > h1 {
+    margin-bottom: 0px;
+}
+
+.tabela-conteudo {
+    background-color: white;
+    color: white;
+    border-radius: 15px;
+    margin: 0px 40px;
+    height: 100px;
+    
+}
+
+aside > h1 {
+    text-align: center;
+    font-family: 'Kibon' , sans-serif;
+    font-size: 3em;
+}
