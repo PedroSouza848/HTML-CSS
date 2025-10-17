@@ -44,7 +44,6 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    
 }
 
 .produto-central {
@@ -111,4 +110,193 @@ aside > h1 {
     text-align: center;
     font-family: 'Kibon' , sans-serif;
     font-size: 3em;
+}
+
+.morango > h3 {
+    text-align: center;
+    font-family: 'Kibon' , sans-serif;
+    font-weight: 3em;
+}
+
+.morango > p {
+    text-align: center;
+    color: #717171;
+}
+
+.morango {
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.167);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0px 15px;
+}
+
+.eskibon > h3 {
+    text-align: center;
+    font-family: 'Kibon' , sans-serif;
+    font-weight: 3em;
+}
+
+.eskibon > p {
+    text-align: center;
+    color: #717171;
+}
+
+.eskibon {
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.167);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0px 15px;
+}
+
+.doce-de-leite > h3 {
+    text-align: center;
+    font-family: 'Kibon' , sans-serif;
+    font-weight: 3em;
+}
+
+.doce-de-leite > p {
+    text-align: center;
+    color: #717171;
+}
+
+.doce-de-leite {
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.167);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0px 15px;
+}
+
+.tradicional > h3 {
+    text-align: center;
+    font-family: 'Kibon' , sans-serif;
+    font-weight: 3em;
+}
+
+.tradicional > p {
+    text-align: center;
+    color: #717171;
+}
+
+.tradicional {
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 550px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.167);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0px 15px;
+}
+
+footer {
+    height: 500px;
+    margin: -15px;
+    background-color: #DE2727;
+}
+
+.imagem-rodape {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.logo-rodape {
+    height: 100px;
+    width: 100px;
+}
+
+.juridico {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 200px;
+    margin: 0px 15px 0px 35px;
+}
+
+.juridico > h2 {
+    font-family: 'Kibon', sans-serif;
+}
+
+.ajuda {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 200px;
+    margin: 0px 15px 0px 25px;
+}
+
+.ajuda > h2 {
+    font-family: 'Kibon', sans-serif;
+}
+
+.siga {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 200px;
+    margin: 0px 15px 0px 25px;
+}
+
+.local {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    height: 200px;
+    margin: 0px 15px 0px 25px;
+}
+
+.local > h2 {
+    font-family: 'Kibon', sans-serif;
+}
+
+footer > p {
+    color: white;
+    
+}
+
+.juridico > a {
+    color: white;
+    line-height: 1.8em;
+    font-family: sans-serif;
+}
+
+.ajuda > a {
+    color: white;
+    line-height: 1.8em;
+    font-family: sans-serif;
+}
+
+.local > p {
+    color: white;
+    font-family: sans-serif;
+}
+
+.local > p > a {
+    color: white;
+    font-family: sans-serif;
+}
+
+footer > p {
+    margin: 30px 20px;
+}
+
+.siga > h2 {
+    font-weight: bold;
 }
