@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, illum fugiat! Vel eligendi dicta officiis voluptate repellat obcaecati assumenda natus ducimus tempore praesentium, ad alias numquam repellendus ipsum voluptatum optio.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag01.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag02.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag03.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, rem iure. Quos modi commodi, adipisci alias numquam qui quod illo autem sunt unde praesentium sapiente libero soluta nobis accusantium debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquam adipisci et, atque aut veniam illum aliquid. Repellat, sed molestiae? Architecto perferendis tempore, laboriosam quod doloribus saepe eaque? Nostrum, laudantium!</p>
+
+    <iframe  id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima &#x2B06 </h1>">
+        <p>Infelizmente, seu navegador não suporta este tipo de conteúdo</p> 
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magni, ab dolore voluptatem unde veniam quos, temporibus reiciendis similique iusto facilis suscipit repellendus fuga sit, totam deserunt eum saepe at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, nobis aut alias illum porro quas cumque hic iusto esse reiciendis maiores reprehenderit nulla expedita vitae quisquam nesciunt dolorum ab dolores!</p>
+
+</body>
+</html>
