@@ -1,112 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nosso Dia dos Namorados ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        form {
+            text-align: center;
+            margin-top: 80px;
+        }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 420px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-      animation: fadeIn 1.5s ease;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    .heart {
-      font-size: 3rem;
-      animation: pulse 1.2s infinite;
-      margin-bottom: 15px;
-    }
-
-    button {
-      background: #fff;
-      color: #ff4f7a;
-      border: none;
-      padding: 12px 22px;
-      border-radius: 30px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-    }
-
-    .message {
-      margin-top: 20px;
-      display: none;
-      font-size: 1.1rem;
-      animation: fadeIn 1s ease forwards;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+        div#resp {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <form action="" method="get">
+        <p>
+            <label for="iv1">Valor 01: </label>
+            <input type="number" name="v1" id="iv1">
+        </p>
+        
+        <p>
+            <label for="iv2">Valor 02: </label>
+            <input type="number" name="v2" id="iv2">
+        </p>
 
-  <div class="card">
-    <div class="heart">❤️</div>
-    <h1>Feliz Dia dos Namorados</h1>
-    <p>
-      Cada momento com você transforma dias comuns
-      em lembranças que eu quero guardar pra sempre.
-    </p>
+        <p>
+            <label for="oper">Operação</label>
+            <select name="seletor" id="oper">
+                <option value="Soma">Soma</option>
+                <option value="Subtração">Subtração</option>
+                <option value="Multiplicação">Multiplicação</option>
+                <option value="Divisão">Divisão</option>
+                <option value="Potência">Potência</option>
+            </select>
+        </p>
 
-    <button onclick="showMessage()">Clique aqui</button>
-
-    <div class="message" id="message">
-      Você é meu lugar favorito no mundo 💕
-    </div>
-  </div>
-
-  <script>
-    function showMessage() {
-      document.getElementById('message').style.display = 'block';
-    }
-  </script>
-
+        <a href="#" onclick="executar()" >Executar</a>
+    </form>
+    <div id="resp">O resultado é </div> 
+    <script src="arquivo.js"></script>
+    <script>
+        const executar = () => {
+            const a = eval(document.getElementById("iv1").value);
+            const b = eval(document.getElementById("iv2").value);
+            let oper = eval(document.getElementById("oper").selectedIndex);
+            let resultado = (oper==0)?somar(a,b):(oper==1)?subtrair(a,b):(oper==2)?multiplicar(a,b):(oper==3)?dividir(a,b):exponencial(a,b);
+            document.getElementById("resp").innerHTML = `O resultado é  ${resultado}`;
+        }
+    </script>
 </body>
 </html>
