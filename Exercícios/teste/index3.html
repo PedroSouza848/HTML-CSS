@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="container">
+    <h1>Fibonacci em JS</h1>
+    <form class="form m-2" action="">
+        <p>
+            <label class="form-label" for="iv1">Valor de X: </label>
+            <input class="form-control" type="number" name="v1" id="iv1">
+        </p>
+        <p>
+            <a class="btn btn-primary m-2" href="#" onclick="executar()">Executar</a>
+        </p>
+    </form>
+    <div class="alert alert-success" id="resp">O resultado aparece aqui: </div>
+
+    <script src="fibo.js"></script>
+    <script>
+        const executar = () => {
+            const x = eval(document.getElementById("iv1").value);
+            let serie = " ", i = 0;
+            while (i <= x) {serie += fibonacci(i) + " "; i++;}
+            document.getElementById("resp").innerHTML = `Resultado: ${serie}`;
+        }
+    </script>
+</body>
+</html>

@@ -4,32 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        form {
-            text-align: center;
-            margin-top: 80px;
-        }
-
-        div#resp {
-            text-align: center;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <form action="" method="get">
+<body class="container">
+    <form class="form m-2" action="" method="get">
         <p>
-            <label for="iv1">Valor 01: </label>
-            <input type="number" name="v1" id="iv1">
+            <label class="form-label" for="iv1">Valor 01: </label>
+            <input class="form-control" type="number" name="v1" id="iv1">
         </p>
         
         <p>
-            <label for="iv2">Valor 02: </label>
-            <input type="number" name="v2" id="iv2">
+            <label class="form-label" for="iv2">Valor 02: </label>
+            <input class="form-control" type="number" name="v2" id="iv2">
         </p>
 
         <p>
-            <label for="oper">Operação</label>
-            <select name="seletor" id="oper">
+            <label class="form-label" for="oper">Operação</label>
+            <select class="form-select" name="seletor" id="oper">
                 <option value="Soma">Soma</option>
                 <option value="Subtração">Subtração</option>
                 <option value="Multiplicação">Multiplicação</option>
@@ -38,9 +29,9 @@
             </select>
         </p>
 
-        <a href="#" onclick="executar()" >Executar</a>
+        <a class="btn btn-primary m-2" href="#" onclick="executar()" >Executar</a>
     </form>
-    <div id="resp">O resultado é </div> 
+    <div class="alert alert-success" id="resp">O resultado é </div> 
     <script src="arquivo.js"></script>
     <script>
         const executar = () => {

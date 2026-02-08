@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="container">
+    <h1>Calculadora de IMC</h1>
+    <form class="form m-2" action="" method="get">
+        <p>
+            <label class="form-label" for="ipeso">Peso: </label>
+            <input class="form-control" type="number" name="peso" id="ipeso">
+        </p>
+        <p>
+            <label class="form-label" for="ialt">Altura: </label>
+            <input class="form-control" type="number" name="Altura" id="ialt">
+        </p>
+    <a class="btn btn-primary m-2" href="#" onclick="executar()">Calcular</a>    
+    </form>
+
+    <script src="IMC.js"></script>
+    <script>
+        const executar = () => {
+            const peso = eval(document.getElementById("ipeso").value);
+            const altura = eval(document.getElementById("ialt").value);
+            const v_imc = imc(peso,altura);
+            const v_sit = situacao(v_imc);
+            alert(`IMC: ${v_imc.toFixed(2)}::Situação: ${v_sit}`);
+        }
+    </script>
+</body>
+</html>
