@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz aniversário, Joiane</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="scene" aria-live="polite">
+      <div class="loading-overlay" id="loadingOverlay">
+        <p>Carregando algo doce...</p>
+      </div>
+
+      <div class="hearts" id="hearts" aria-hidden="true"></div>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+      <section class="stage" id="stage">
+        <div class="table" id="table"></div>
+
+        <div class="cake" id="cake" aria-label="Bolo de aniversário">
+          <div class="cake-base"></div>
+          <div class="cake-frosting"></div>
+          <div class="cake-icing"></div>
+          <div class="candles" id="candles"></div>
+        </div>
+      </section>
+
+      <section class="message" id="messageBlock">
+        <h1>Feliz aniversário, Joiane 🎂</h1>
+        <p>Que seu novo ano seja tão doce quanto os pães que você faz.</p>
+
+        <button type="button" id="wishButton">Faça um pedido</button>
+        <p class="final-message" id="finalMessage">Espero que seu dia seja especial ❤️</p>
+      </section>
+
+      <div class="wish-glow" id="wishGlow" aria-hidden="true"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
