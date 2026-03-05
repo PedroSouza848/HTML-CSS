@@ -24,7 +24,7 @@ body {
 
 .scene {
   position: relative;
-  min-height: 98vh;
+  min-height: 95vh;
   display: grid;
   place-items: center;
   padding: 1.5rem;
