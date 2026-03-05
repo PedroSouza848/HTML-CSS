@@ -7,4 +7,4 @@ Estou aprendendo a criar sites e agora vou gerenciar os meus repositórios
 
 <a href="https://pedrosouza848.github.io/HTML-CSS/Exerc%C3%ADcios/teste/index.html">Executar o exercício da calculadora</a>
 
-<a href="https://pedrosouza848.github.io/HTML-CSS/aniversario/index.html">Abrir o site de Feliz Aniversário</a>
+<a href="https://pedrosouza848.github.io/HTML-CSS/Exerc%C3%ADcios/aniversario/index.html">Abrir o site de Feliz Aniversário</a>
