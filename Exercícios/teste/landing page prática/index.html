@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QuantoSobra</h1>
+    </header>
+    <div class="container">
+        <main>
+            <h2 class="titulo">Planilha de Cadastro de Clientes e fornecedores</h2>
+            <div id="video">
+                <iframe width="460" height="315" src="https://www.youtube.com/embed/j8ynxFrfg6k?si=Zn-kGoKhQaiKrv9a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <h2>Sobre a Planilha de Cadastro de Clientes e Fornecedores</h2>
+                <dl>
+                    <section>
+                        <dt>Saiba quem são seus clientes</dt>
+                            <dd>
+                                Tenha o cadastro de seus clientes em um lugar só.
+                            </dd>
+                    </section>
+                    <section>
+                        <dt>Campos personalizados</dt>
+                            <dd>
+                                Com a planilha de cadastros você tem campos personalizados para preencher
+                                informações essenciais de seus clientes e fornecedores.
+                            </dd>
+                    </section>
+                    <section>
+                        <dt>Use filtros para controlar os cadastros</dt>
+                            <dd>
+                                Na Planilha de Cadastro de Clientes e fornecedores você pode aplicar filtros para encontrar dados de forma mais rápida e simples.
+                            </dd>
+                    </section>
+                </dl>
+            <div id="form">
+                <h2>Receba a Planilha no seu Email</h2>
+                <p><i>Preencha seus dados para receber o material</i></p>
+                <form action="" method="get">
+                    <p class="escolha">
+                        <label for="inome">Nome*:</label>
+                        <input type="text" name="Nome" id="inome">
+                    </p>
+                    <p class="escolha">
+                        <label for="iemal">Email*:</label>
+                        <input type="email" name="Email" id="iemail">
+                    </p>
+                    <p >Você já tem empresa formalizada?*</p>
+                     <fieldset >
+                        <input type="radio" name="escolha" id="ies" value="S"> <label for="ies">SIM</label><br>
+                        <input type="radio" name="escolha" id="ien" value="N"> <label for="ien">NÃO</label><br>
+                        <input type="radio" name="escolha" id="abrin" value="AB"> <label for="abrin">ESTOU ABRINDO EMPRESA</label> <br>
+                        <input type="radio" name="escolha" id="c/c" value="C/C"> <label for="c/c">SOU CONTADOR/CONSULTOR</label> <br>
+                        <input type="radio" name="escolha" id="nt" value="NT"> <label for="nt">NÃO POSSUO EMPRESA</label>
+                     </fieldset>
+                    <p>Sua empresa é*:</p>
+                    <select class="select" name="" id="">
+                        <option value="">---Selecione---</option>
+                        <option value="">Bonita</option>
+                        <option value="">Feia</option>
+                    </select>
+                    <p>Quantas pessoas tem na sua empresa?*</p>
+                    <select class="select" name="" id="">
+                        <option value="">---Selecione---</option>
+                        <option value=""> -8</option>
+                        <option value="">15,5</option>
+                    </select>
+                    <p>Onde você usará a planilha?*</p>
+                    <select class="select" name="" id="">
+                        <option value="">---Selecione---</option>
+                        <option value="">Numa Festa</option>
+                        <option value="">No circo</option>
+                    </select>
+                    <p style="margin: 7px 7px 7px 0px;">
+                        <label for="inum">4 + 3 = ?</label>
+                        <input type="number" name="Numero" id="inum">
+                    </p>
+                    <input class="botao" type="submit" value="Receber Planilha">
+                    <p class="final">Prometemos não usar suas informações de contato para enviar qualquer tipo de SPAM.</p>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

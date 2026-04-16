@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bert-Sans';
+    src: url('fontes/Bert-Sans/BertSans-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bert-normal';
+    src: url('fontes/Bert-Sans/BertSans-Light.ttf') format('opentype'); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 10px;
+}
+
+body {
+    background-color: #6EC5B8;
+    color: white;
+    height: 100vh;
+    width: 95vw;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 25px;
+    font-family: 'Bert-Sans', 'serife';
+    font-size: 32px;
+}
+
+main {
+    columns: 2;
+    height: 800px;
+    
+}
+
+main > h2.titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+main > h2 {
+    text-align: left;
+    padding: 15px 0px 0px 25px;
+}
+
+main > dl > section {
+    padding-left: 25px;
+}
+
+main > dl > section > dt {
+    font-size: 1.5em;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+main > dl > section > dd {
+    font-size: 0.85em;
+}
+
+div#video {             
+    display: flex;
+    justify-content: center;
+} 
+
+
+
+div#form {
+    background-color: #10A98B;
+    height: auto;
+    width: 25vw;
+    padding: 15px 35px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+div#form > h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+div#form > p {
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+div#form > form > p {
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+div#form > form > p.escolha {
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+div#form > form > fieldset {
+    line-height: 1.8;
+    padding: 6px 0px 15px 0px;
+    border: none;
+}
+
+div#form > form > select.select {
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+div#form > form > input.botao {
+    width: 100%;
+  padding: 15px;
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+} 
+
+div#form > form > p.final {
+    padding: 20px 0px;
+    font-size: 0.8em;
+}
