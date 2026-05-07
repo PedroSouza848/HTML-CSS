@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.conteiner01 {
+            background-color: lightsalmon;
+            display: flex;
+
+            flex-flow: row nowrap;
+            
+        }
+
+        div.item01 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        div.conteiner02 {
+            background-color: lightsalmon;
+            display: flex;
+
+            flex-flow: row nowrap;
+            
+        }
+
+        div.item02 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-grow: 2; 
+            flex-shrink: 0;
+        }
+
+        div.conteiner03 {
+            background-color: lightsalmon;
+            display: flex;
+
+            flex-flow: row nowrap;
+            
+        }
+
+        div.item03 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+        div#cxA {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#cxB {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#cxC {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div#cxD {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div#cxE {
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        div#cxF {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        div#cxG {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        div#cxH {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        div#cxI {
+            flex-grow: 0;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner01">
+        <div class="item01" id="cxA">A</div>
+        <div class="item01" id="cxB">B</div>
+        <div class="item01" id="cxC">C</div>
+        
+    </div>
+    <div class="conteiner02">
+        <div class="item02" id="cxD">D</div>
+        <div class="item02" id="cxE">E</div>
+        <div class="item02" id="cxF">F</div>
+    </div>
+    <div class="conteiner03">
+        <div class="item03" id="cxG">G</div>
+        <div class="item03" id="cxH">H</div>
+        <div class="item03" id="cxI">I</div>
+    </div>
+</body>
+</html>
